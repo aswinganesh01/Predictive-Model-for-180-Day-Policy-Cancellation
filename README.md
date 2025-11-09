@@ -1,11 +1,25 @@
 # Predictive Model for 180-Day Policy Cancellation (The Hartford)
 
-##  Executive Summary
+> **Note:**  
+> Due to data privacy and security restrictions, this repository **does not include the original code, data, or model files**.  
+> The project was conducted using internal datasets as part of an **industry-based collaboration with The Hartford**, and all proprietary data and scripts remain confidential.  
+> This repository showcases the **business impact, analysis insights, and visual summaries** derived from the project.
+
+---
+
+## Executive Summary
 
 This project developed an **XGBoost machine learning model** to predict which **auto insurance policies** are most likely to be canceled within **180 days**.
 
 By tuning the model’s prediction threshold, the team increased the number of **identified high-risk policies by 3.6×** compared to the default setting — shifting focus from perfect accuracy to **maximum business value**.  
 This enables the retention team to **intervene proactively**, potentially saving **millions in lost premium revenue**.
+
+**Key Findings**
+- **Risk Profile is the #1 Driver:** A customer’s *Risk Group* is the strongest predictor of policy cancellation.  
+- **Contact Method Matters:** Policies initiated through a **Call Center or Agent** show better retention than those started online.  
+- **Model is Actionable:** The tuned model captures **58% of all actual cancellations**, giving the business a high-impact target list for retention efforts.
+
+---
 
 **Key Findings**
 - **Risk Profile is the #1 Driver:** A customer’s *Risk Group* is the strongest predictor of policy cancellation.  
@@ -98,6 +112,14 @@ A structured and reproducible ML pipeline ensured consistent results:
 
 ---
 
+## 🏆 Highlights
+
+- Identified **8,000+ high-risk policies** for immediate retention action.  
+- Improved recall by **3.6×** through optimized thresholding.  
+- Delivered **data-driven insights** enabling strategic retention decisions.
+
+---
+
 ##  Tools and Technologies
 
 - **Languages:** Python  
@@ -106,11 +128,7 @@ A structured and reproducible ML pipeline ensured consistent results:
 - **Performance:** AUC-ROC = 0.73 | F1-Score = 0.57 | Recall = 0.58  
 - **Dataset:** 371,859 auto policies, 38 features
 
----
 
-
-
----
 
 ##  Repository Structure
 
@@ -136,14 +154,6 @@ policy-cancellation-prediction/
 └── LICENSE                       # License (if applicable)
 ```
 
----
 
 
 
----
-
-## 🏆 Highlights
-
-- Identified **8,000+ high-risk policies** for immediate retention action.  
-- Improved recall by **3.6×** through optimized thresholding.  
-- Delivered **data-driven insights** enabling strategic retention decisions.
