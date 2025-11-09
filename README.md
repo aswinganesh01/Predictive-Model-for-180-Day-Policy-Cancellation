@@ -19,12 +19,12 @@ This enables the retention team to **intervene proactively**, potentially saving
 **Retention Rate by Market Channel**  
 While online policies show the highest retention rate (81.8%), they also account for the majority of total policies. Channels like Agent and Search exhibit lower retention rates — ideal candidates for targeted retention.
 
-![EDA Retention by Channel](eda_retention_by_channel.png)
+[![EDA Retention by Channel](eda_retention_by_channel.png)](https://github.com/aswinganesh01/Predictive-Model-for-180-Day-Policy-Cancellation/blob/c835476df538eefb441c8f15d2fa8bb6537c23ab/eda_retention_by_channel.png)
 
 **Premium Trend Analysis**  
 Monthly billed premiums have consistently increased over the last three policy years, signaling higher average policy value or greater product complexity.
 
-![EDA Premium Trends](eda_premium_trends.png)
+[![EDA Premium Trends](eda_premium_trends.png)](https://github.com/aswinganesh01/Predictive-Model-for-180-Day-Policy-Cancellation/blob/c835476df538eefb441c8f15d2fa8bb6537c23ab/eda_premium_trends.png)
 
 ---
 
@@ -37,7 +37,7 @@ It achieved a **macro F1-score of 0.57** and an **AUC-ROC of 0.73**, demonstrati
 Because of class imbalance, a default 0.50 probability threshold missed many cancellations.  
 By optimizing the threshold to **0.211**, the recall increased substantially while keeping precision stable — identifying **3.6× more high-risk customers** than before.
 
-![Precision Recall Curve](model_precision_recall_curve.png)
+[![Precision Recall Curve](model_precision_recall_curve.png)](https://github.com/aswinganesh01/Predictive-Model-for-180-Day-Policy-Cancellation/blob/c835476df538eefb441c8f15d2fa8bb6537c23ab/model_precision_recall_curve.png)
 
 **Confusion Matrix (After Tuning)**  
 - True Negatives: 45,495  
@@ -48,7 +48,7 @@ By optimizing the threshold to **0.211**, the recall increased substantially whi
 **Business Impact:**  
 The **8,115 True Positives** represent real customers at risk — a ready-to-act retention list worth significant premium value.
 
-![Confusion Matrix](model_confusion_matrix.png)
+[![Confusion Matrix](model_confusion_matrix.png)](https://github.com/aswinganesh01/Predictive-Model-for-180-Day-Policy-Cancellation/blob/c835476df538eefb441c8f15d2fa8bb6537c23ab/model_confusion_matrix.png)
 
 ---
 
@@ -65,13 +65,13 @@ Understanding *why* customers cancel is critical for business strategy.
 - **Policy Bundling:** Customers holding both Auto and Home policies are more stable.  
 - **Vehicle Count:** Multi-vehicle policies have slightly higher cancellation risk.
 
-![Feature Importance](impact_feature_importance.png)
+[![Feature Importance](impact_feature_importance.png)](https://github.com/aswinganesh01/Predictive-Model-for-180-Day-Policy-Cancellation/blob/c835476df538eefb441c8f15d2fa8bb6537c23ab/impact_feature_importance.png)
 
 **SHAP Insights:**
 - **Customer Lifetime Value Group:** Long-tenure, high-value customers show reduced cancellation risk.  
 - **Risk Group:** High-risk scores strongly elevate cancellation probability.
 
-![SHAP Summary](impact_shap_summary.png)
+[![SHAP Summary](impact_shap_summary.png)](https://github.com/aswinganesh01/Predictive-Model-for-180-Day-Policy-Cancellation/blob/c835476df538eefb441c8f15d2fa8bb6537c23ab/impact_shap_summary.png)
 
 ---
 
@@ -108,22 +108,7 @@ A structured and reproducible ML pipeline ensured consistent results:
 
 ---
 
-## 🧠 How to Run the Project
-
-**1️⃣ Clone the Repository**
-```bash
-git clone https://github.com/<your-username>/policy-cancellation-prediction.git
-cd policy-cancellation-prediction
-```
-
-**2️⃣ Create a Virtual Environment**
-```bash
-python -m venv venv
-source venv/bin/activate    # For Mac/Linux
-venv\Scripts\activate       # For Windows
-```
-
-**3️⃣ Install Dependencies**
+##  Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
@@ -163,19 +148,7 @@ policy-cancellation-prediction/
 
 ---
 
-## 📈 Executive Dashboard
 
-![Predictive Retention Dashboard](predictive_retention_dashboard.png)
-
-This dashboard visually summarizes the **model performance**, **high-risk identification**, and **key retention drivers** in a clear business-friendly format.
-
----
-
-## 👥 Team
-
-**The Hartford Group 3**  
-Aswin Ganesh Venkatramanan • Prince Kodua • Soumya Vadla • Xinyu Yuan  
-*University of Connecticut – MS in Data Science Capstone Project*
 
 ---
 
