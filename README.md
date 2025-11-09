@@ -1,4 +1,4 @@
-# Predictive Model for 180-Day Policy Cancellation (The Hartford)
+
 
 > **Note:**  
 > Due to data privacy and security restrictions, this repository **does not include the original code, data, or model files**.  
