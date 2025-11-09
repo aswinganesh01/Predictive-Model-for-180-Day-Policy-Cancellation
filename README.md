@@ -1,6 +1,6 @@
-# 🧠 Policy Cancellation Prediction: Enhancing Customer Retention
+# Predictive Model for 180-Day Policy Cancellation (The Hartford)
 
-## 🚀 Executive Summary
+##  Executive Summary
 
 This project developed an **XGBoost machine learning model** to predict which **auto insurance policies** are most likely to be canceled within **180 days**.
 
@@ -14,7 +14,7 @@ This enables the retention team to **intervene proactively**, potentially saving
 
 ---
 
-## 📊 Exploratory Data Insights (EDA)
+## Exploratory Data Insights (EDA)
 
 **Retention Rate by Market Channel**  
 While online policies show the highest retention rate (81.8%), they also account for the majority of total policies. Channels like Agent and Search exhibit lower retention rates — ideal candidates for targeted retention.
@@ -28,7 +28,7 @@ Monthly billed premiums have consistently increased over the last three policy y
 
 ---
 
-## ⚙️ Model Performance
+##  Model Performance
 
 Among all models tested — Logistic Regression, Random Forest, AdaBoost, and XGBoost — the **XGBoost classifier** delivered the **best performance**.  
 It achieved a **macro F1-score of 0.57** and an **AUC-ROC of 0.73**, demonstrating robust generalization and high reliability.
@@ -52,7 +52,7 @@ The **8,115 True Positives** represent real customers at risk — a ready-to-act
 
 ---
 
-## 💡 Key Drivers and Interpretability
+##  Key Drivers and Interpretability
 
 Understanding *why* customers cancel is critical for business strategy.
 
@@ -75,7 +75,7 @@ Understanding *why* customers cancel is critical for business strategy.
 
 ---
 
-## 🧩 Data and Modeling Pipeline
+## Data and Modeling Pipeline
 
 A structured and reproducible ML pipeline ensured consistent results:  
 - 371,000+ records and 38 variables processed.  
@@ -88,7 +88,7 @@ A structured and reproducible ML pipeline ensured consistent results:
 
 ---
 
-## ⏭️ Recommendations
+##  Recommendations
 
 1. **Targeted Outreach:** Immediately contact the **8,115 predicted high-risk customers** with personalized offers or review calls.  
 2. **Risk Group Deep Dive:** Investigate why the top-risk customers cancel and refine pricing or engagement strategies.  
@@ -98,7 +98,7 @@ A structured and reproducible ML pipeline ensured consistent results:
 
 ---
 
-## 🧰 Tools and Technologies
+##  Tools and Technologies
 
 - **Languages:** Python  
 - **Libraries:** XGBoost, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn  
@@ -108,21 +108,11 @@ A structured and reproducible ML pipeline ensured consistent results:
 
 ---
 
-##  Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
 
-**4️⃣ Run the Notebook**
-Open the Jupyter notebook:
-```bash
-jupyter notebook
-```
-Run `model_pipeline.ipynb` to reproduce preprocessing, model training, and evaluation.
 
 ---
 
-## 🗂️ Repository Structure
+##  Repository Structure
 
 ```
 policy-cancellation-prediction/
